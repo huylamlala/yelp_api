@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,20 @@
 		78FF566F27E829A000D832C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FF566D27E829A000D832C5 /* LaunchScreen.storyboard */; };
 		78FF567A27E829A000D832C5 /* YelpApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF567927E829A000D832C5 /* YelpApiTests.swift */; };
 		78FF568527E829A000D832C5 /* YelpApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF568427E829A000D832C5 /* YelpApiUITests.swift */; };
+		78FF569427E83DB800D832C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF569327E83DB800D832C5 /* Constants.swift */; };
+		78FF56A027E83E5F00D832C5 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF569927E83E5F00D832C5 /* ApiError.swift */; };
+		78FF56A127E83E5F00D832C5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF569A27E83E5F00D832C5 /* APIRequest.swift */; };
+		78FF56A227E83E5F00D832C5 /* URLRequestConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF569C27E83E5F00D832C5 /* URLRequestConvertable.swift */; };
+		78FF56A927E8402F00D832C5 /* BusinessRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56A827E8402F00D832C5 /* BusinessRequestModel.swift */; };
+		78FF56AB27E8403B00D832C5 /* BusinessResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56AA27E8403B00D832C5 /* BusinessResponseModel.swift */; };
+		78FF56AD27E8404500D832C5 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56AC27E8404500D832C5 /* Business.swift */; };
+		78FF56AF27E843C800D832C5 /* BusinessServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56AE27E843C800D832C5 /* BusinessServices.swift */; };
+		78FF56B127E845F800D832C5 /* BusinessURLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56B027E845F800D832C5 /* BusinessURLRequests.swift */; };
+		78FF56B427E846FA00D832C5 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56B327E846FA00D832C5 /* Encodable+Extensions.swift */; };
+		78FF56B827E865F500D832C5 /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56B727E865F500D832C5 /* BusinessListViewModel.swift */; };
+		78FF56BB27E8752900D832C5 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56BA27E8752900D832C5 /* FilterViewModel.swift */; };
+		78FF56BF27E87BB800D832C5 /* BusinessListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56BE27E87BB800D832C5 /* BusinessListViewModelTests.swift */; };
+		78FF56C127E8DF0700D832C5 /* FilterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF56C027E8DF0700D832C5 /* FilterViewModelTests.swift */; };
 		BF798ED6D9585E916CB9D93A /* Pods_YelpApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB013F0C31CA51F95802824 /* Pods_YelpApiTests.framework */; };
 		D5F324E100D785DAF302504B /* YelpApiTests-YelpApiMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670E04F89C82C2D8F98F8F10 /* YelpApiTests-YelpApiMocks.generated.swift */; };
 		FF000AABED73C91D913D31E6 /* Pods_YelpApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E199A28AF3B7D7262061C7AB /* Pods_YelpApi.framework */; };
@@ -41,7 +55,7 @@
 /* Begin PBXFileReference section */
 		183304EADCDC55A9152D81F2 /* Pods-YelpApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpApiTests.release.xcconfig"; path = "Target Support Files/Pods-YelpApiTests/Pods-YelpApiTests.release.xcconfig"; sourceTree = "<group>"; };
 		4801326D9BB162C5C7E081E3 /* Pods_YelpApi_YelpApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpApi_YelpApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		670E04F89C82C2D8F98F8F10 /* YelpApiTests-YelpApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "YelpApiTests-YelpApiMocks.generated.swift"; path = "MockingbirdMocks/YelpApiTests-YelpApiMocks.generated.swift"; sourceTree = "<group>"; };
+		670E04F89C82C2D8F98F8F10 /* YelpApiTests-YelpApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "YelpApiTests-YelpApiMocks.generated.swift"; path = "MockingbirdMocks/YelpApiTests-YelpApiMocks.generated.swift"; sourceTree = "<group>"; };
 		78FF565F27E8299E00D832C5 /* YelpApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FF566227E8299F00D832C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FF566427E8299F00D832C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +70,20 @@
 		78FF568027E829A000D832C5 /* YelpApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FF568427E829A000D832C5 /* YelpApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpApiUITests.swift; sourceTree = "<group>"; };
 		78FF568627E829A000D832C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FF569327E83DB800D832C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		78FF569927E83E5F00D832C5 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		78FF569A27E83E5F00D832C5 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		78FF569C27E83E5F00D832C5 /* URLRequestConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertable.swift; sourceTree = "<group>"; };
+		78FF56A827E8402F00D832C5 /* BusinessRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRequestModel.swift; sourceTree = "<group>"; };
+		78FF56AA27E8403B00D832C5 /* BusinessResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessResponseModel.swift; sourceTree = "<group>"; };
+		78FF56AC27E8404500D832C5 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		78FF56AE27E843C800D832C5 /* BusinessServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessServices.swift; sourceTree = "<group>"; };
+		78FF56B027E845F800D832C5 /* BusinessURLRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessURLRequests.swift; sourceTree = "<group>"; };
+		78FF56B327E846FA00D832C5 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		78FF56B727E865F500D832C5 /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
+		78FF56BA27E8752900D832C5 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		78FF56BE27E87BB800D832C5 /* BusinessListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModelTests.swift; sourceTree = "<group>"; };
+		78FF56C027E8DF0700D832C5 /* FilterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModelTests.swift; sourceTree = "<group>"; };
 		840493E602176D3D33CFA1AA /* Pods-YelpApi-YelpApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpApi-YelpApiUITests.release.xcconfig"; path = "Target Support Files/Pods-YelpApi-YelpApiUITests/Pods-YelpApi-YelpApiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A7A5B42EC6F095EDE386F54E /* Pods-YelpApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpApi.debug.xcconfig"; path = "Target Support Files/Pods-YelpApi/Pods-YelpApi.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFE514FA73A682CFA271A80 /* Pods-YelpApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpApiTests.debug.xcconfig"; path = "Target Support Files/Pods-YelpApiTests/Pods-YelpApiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +139,6 @@
 				BDFE514FA73A682CFA271A80 /* Pods-YelpApiTests.debug.xcconfig */,
 				183304EADCDC55A9152D81F2 /* Pods-YelpApiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -141,6 +168,11 @@
 		78FF566127E8299F00D832C5 /* YelpApi */ = {
 			isa = PBXGroup;
 			children = (
+				78FF56B527E865C300D832C5 /* Features */,
+				78FF56A627E8401500D832C5 /* Models */,
+				78FF569727E83E1C00D832C5 /* Layers */,
+				78FF569527E83E0200D832C5 /* Services */,
+				78FF569227E83DAC00D832C5 /* Common */,
 				78FF566227E8299F00D832C5 /* AppDelegate.swift */,
 				78FF566427E8299F00D832C5 /* SceneDelegate.swift */,
 				78FF566627E8299F00D832C5 /* ViewController.swift */,
@@ -157,6 +189,8 @@
 			children = (
 				78FF567927E829A000D832C5 /* YelpApiTests.swift */,
 				78FF567B27E829A000D832C5 /* Info.plist */,
+				78FF56BE27E87BB800D832C5 /* BusinessListViewModelTests.swift */,
+				78FF56C027E8DF0700D832C5 /* FilterViewModelTests.swift */,
 			);
 			path = YelpApiTests;
 			sourceTree = "<group>";
@@ -168,6 +202,109 @@
 				78FF568627E829A000D832C5 /* Info.plist */,
 			);
 			path = YelpApiUITests;
+			sourceTree = "<group>";
+		};
+		78FF569227E83DAC00D832C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56B227E846EE00D832C5 /* Extensions */,
+				78FF569327E83DB800D832C5 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		78FF569527E83E0200D832C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56AE27E843C800D832C5 /* BusinessServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78FF569727E83E1C00D832C5 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				78FF569827E83E2C00D832C5 /* Networking */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		78FF569827E83E2C00D832C5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				78FF569927E83E5F00D832C5 /* ApiError.swift */,
+				78FF569A27E83E5F00D832C5 /* APIRequest.swift */,
+				78FF569B27E83E5F00D832C5 /* URLRequestsAndService */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		78FF569B27E83E5F00D832C5 /* URLRequestsAndService */ = {
+			isa = PBXGroup;
+			children = (
+				78FF569C27E83E5F00D832C5 /* URLRequestConvertable.swift */,
+				78FF56A527E83FB600D832C5 /* Business */,
+			);
+			path = URLRequestsAndService;
+			sourceTree = "<group>";
+		};
+		78FF56A527E83FB600D832C5 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56B027E845F800D832C5 /* BusinessURLRequests.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		78FF56A627E8401500D832C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56A727E8401A00D832C5 /* Business */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78FF56A727E8401A00D832C5 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56A827E8402F00D832C5 /* BusinessRequestModel.swift */,
+				78FF56AA27E8403B00D832C5 /* BusinessResponseModel.swift */,
+				78FF56AC27E8404500D832C5 /* Business.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		78FF56B227E846EE00D832C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56B327E846FA00D832C5 /* Encodable+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78FF56B527E865C300D832C5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56B927E8751D00D832C5 /* Filter */,
+				78FF56B627E865D000D832C5 /* BusinessList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		78FF56B627E865D000D832C5 /* BusinessList */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56B727E865F500D832C5 /* BusinessListViewModel.swift */,
+			);
+			path = BusinessList;
+			sourceTree = "<group>";
+		};
+		78FF56B927E8751D00D832C5 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				78FF56BA27E8752900D832C5 /* FilterViewModel.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 		AEB78D5FCB7EF0C4035D5C9E /* Frameworks */ = {
@@ -403,13 +540,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YelpApi-YelpApiUITests/Pods-YelpApi-YelpApiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YelpApi-YelpApiUITests/Pods-YelpApi-YelpApiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,13 +557,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YelpApi/Pods-YelpApi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YelpApi/Pods-YelpApi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -445,13 +574,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YelpApiTests/Pods-YelpApiTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YelpApiTests/Pods-YelpApiTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -466,8 +591,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				78FF566727E8299F00D832C5 /* ViewController.swift in Sources */,
+				78FF56A227E83E5F00D832C5 /* URLRequestConvertable.swift in Sources */,
 				78FF566327E8299F00D832C5 /* AppDelegate.swift in Sources */,
 				78FF566527E8299F00D832C5 /* SceneDelegate.swift in Sources */,
+				78FF56AF27E843C800D832C5 /* BusinessServices.swift in Sources */,
+				78FF56B427E846FA00D832C5 /* Encodable+Extensions.swift in Sources */,
+				78FF56AB27E8403B00D832C5 /* BusinessResponseModel.swift in Sources */,
+				78FF56BB27E8752900D832C5 /* FilterViewModel.swift in Sources */,
+				78FF56A027E83E5F00D832C5 /* ApiError.swift in Sources */,
+				78FF56A127E83E5F00D832C5 /* APIRequest.swift in Sources */,
+				78FF56AD27E8404500D832C5 /* Business.swift in Sources */,
+				78FF56B127E845F800D832C5 /* BusinessURLRequests.swift in Sources */,
+				78FF569427E83DB800D832C5 /* Constants.swift in Sources */,
+				78FF56B827E865F500D832C5 /* BusinessListViewModel.swift in Sources */,
+				78FF56A927E8402F00D832C5 /* BusinessRequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +614,8 @@
 			files = (
 				78FF567A27E829A000D832C5 /* YelpApiTests.swift in Sources */,
 				D5F324E100D785DAF302504B /* YelpApiTests-YelpApiMocks.generated.swift in Sources */,
+				78FF56C127E8DF0700D832C5 /* FilterViewModelTests.swift in Sources */,
+				78FF56BF27E87BB800D832C5 /* BusinessListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -629,7 +768,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -12,7 +12,7 @@ class BusinessListViewModel {
   enum ViewStates: Equatable {
     case initial
     case loading
-    case loaded
+    case loaded(canLoadMore: Bool)
     case error(APIError)
   }
   
@@ -20,6 +20,7 @@ class BusinessListViewModel {
   var businessList: [Business] = []
   var currentRequetModel = BusinessRequestModel()
   var businessService: BusinessService!
+  private let disposeBag = DisposeBag()
   
   func onFilterChanged(newSearchTerm: String?,
                        newCategory: CategoryFilter,
@@ -39,7 +40,7 @@ class BusinessListViewModel {
   }
   
   func onTapErrorCta() {
-    state.onNext(.loaded)
+    state.onNext(.loaded(canLoadMore: true))
   }
   
   func onRefresh() {
@@ -49,18 +50,20 @@ class BusinessListViewModel {
   }
   
   private func getBusiness() {
+    if (try? state.value()) == .loading { return }
     state.onNext(.loading)
     businessService
       .getBusiness(requestModel: currentRequetModel)
       .subscribe(onNext: { [weak self] result in
+        guard let strongSelf = self else { return }
         switch result {
         case .failure(let error):
-          self?.state.onNext(.error(error))
+          strongSelf.state.onNext(.error(error))
         case .success(let object):
-          self?.businessList.append(contentsOf: object.businesses)
-          self?.state.onNext(.loaded)
+          strongSelf.businessList.append(contentsOf: object.businesses)
+          strongSelf.state.onNext(.loaded(canLoadMore: object.total > strongSelf.businessList.count))
         }
       })
-      .dispose()
+      .disposed(by: disposeBag)
   }
 }

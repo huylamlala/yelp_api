@@ -14,7 +14,7 @@ class APIRequest {
   
   init() {
     let configuration = URLSessionConfiguration.default
-    
+    configuration.httpAdditionalHeaders = ["Authorization": "Bearer \(Constants.apiKey)"]
     sessionManager = Alamofire.Session(configuration: configuration)
   }
   

@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Business
 
 struct Business {
-  let rating: Int?
+  let rating: Double?
   let price, phone, id, alias: String?
   let isClosed: Bool?
   let categories: [Category]?
@@ -66,18 +66,18 @@ extension Business: Codable, Equatable {
 
 // MARK: - Category
 struct Category: Codable {
-  let alias, title: String
+  let alias, title: String?
 }
 
 // MARK: - Center
 struct Center: Codable, Equatable {
-  let latitude, longitude: Double
+  let latitude, longitude: Double?
 }
 
 // MARK: - Location
 struct Location: Codable {
-  let city, country, address2, address3: String
-  let state, address1, zipCode: String
+  let city, country, address2, address3: String?
+  let state, address1, zipCode: String?
   
   enum CodingKeys: String, CodingKey {
     case city, country, address2, address3, state, address1
@@ -86,6 +86,6 @@ struct Location: Codable {
 }
 // MARK: - Region
 struct Region: Codable, Equatable {
-  let center: Center
+  let center: Center?
 }
 

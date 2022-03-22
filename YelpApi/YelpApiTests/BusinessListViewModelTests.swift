@@ -42,8 +42,7 @@ class BusinessListViewModelTests: XCTestCase {
                               newSorting: .distance)
     verify(businessServiceMock.getBusiness(requestModel: requestModel)).wasCalled()
     XCTAssert(viewModel.businessList == [Business.draftModel])
-    XCTAssert((try? viewModel.state.value()) == .loaded)
-//    XCTAssert(requestModel == viewModel.currentRequetModel)
+    XCTAssert((try? viewModel.state.value()) == .loaded(canLoadMore: true))
   }
   
   func testOnLoadMore() throws {
@@ -57,7 +56,7 @@ class BusinessListViewModelTests: XCTestCase {
     viewModel.onLoadmore()
     verify(businessServiceMock.getBusiness(requestModel: viewModel.currentRequetModel)).wasCalled()
     XCTAssert(viewModel.businessList == [Business.draftModel])
-    XCTAssert((try? viewModel.state.value()) == .loaded)
+    XCTAssert((try? viewModel.state.value()) == .loaded(canLoadMore: true))
   }
   
   func testOnTapErrorCta() throws {
@@ -75,6 +74,6 @@ class BusinessListViewModelTests: XCTestCase {
     viewModel.onRefresh()
     verify(businessServiceMock.getBusiness(requestModel: any())).wasCalled()
     XCTAssert(viewModel.businessList == [Business.draftModel])
-    XCTAssert((try? viewModel.state.value()) == .loaded)
+    XCTAssert((try? viewModel.state.value()) == .loaded(canLoadMore: true))
   }
 }

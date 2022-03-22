@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		71E166D0C44D69B6947292C6 /* Pods_YelpApi_YelpApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4801326D9BB162C5C7E081E3 /* Pods_YelpApi_YelpApiUITests.framework */; };
+		785DF51D27E96B7000B58E21 /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DF51C27E96B7000B58E21 /* BusinessListViewController.swift */; };
+		785DF52027E99CA000B58E21 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DF51F27E99CA000B58E21 /* LoadMoreCell.swift */; };
 		78FF566327E8299F00D832C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF566227E8299F00D832C5 /* AppDelegate.swift */; };
 		78FF566527E8299F00D832C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF566427E8299F00D832C5 /* SceneDelegate.swift */; };
 		78FF566727E8299F00D832C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF566627E8299F00D832C5 /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 		183304EADCDC55A9152D81F2 /* Pods-YelpApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpApiTests.release.xcconfig"; path = "Target Support Files/Pods-YelpApiTests/Pods-YelpApiTests.release.xcconfig"; sourceTree = "<group>"; };
 		4801326D9BB162C5C7E081E3 /* Pods_YelpApi_YelpApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpApi_YelpApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		670E04F89C82C2D8F98F8F10 /* YelpApiTests-YelpApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "YelpApiTests-YelpApiMocks.generated.swift"; path = "MockingbirdMocks/YelpApiTests-YelpApiMocks.generated.swift"; sourceTree = "<group>"; };
+		785DF51C27E96B7000B58E21 /* BusinessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewController.swift; sourceTree = "<group>"; };
+		785DF51F27E99CA000B58E21 /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
 		78FF565F27E8299E00D832C5 /* YelpApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FF566227E8299F00D832C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FF566427E8299F00D832C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +144,14 @@
 				183304EADCDC55A9152D81F2 /* Pods-YelpApiTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		785DF51E27E99C8B00B58E21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				785DF51F27E99CA000B58E21 /* LoadMoreCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		78FF565627E8299E00D832C5 = {
@@ -294,7 +306,9 @@
 		78FF56B627E865D000D832C5 /* BusinessList */ = {
 			isa = PBXGroup;
 			children = (
+				785DF51E27E99C8B00B58E21 /* Views */,
 				78FF56B727E865F500D832C5 /* BusinessListViewModel.swift */,
+				785DF51C27E96B7000B58E21 /* BusinessListViewController.swift */,
 			);
 			path = BusinessList;
 			sourceTree = "<group>";
@@ -593,7 +607,9 @@
 				78FF566727E8299F00D832C5 /* ViewController.swift in Sources */,
 				78FF56A227E83E5F00D832C5 /* URLRequestConvertable.swift in Sources */,
 				78FF566327E8299F00D832C5 /* AppDelegate.swift in Sources */,
+				785DF52027E99CA000B58E21 /* LoadMoreCell.swift in Sources */,
 				78FF566527E8299F00D832C5 /* SceneDelegate.swift in Sources */,
+				785DF51D27E96B7000B58E21 /* BusinessListViewController.swift in Sources */,
 				78FF56AF27E843C800D832C5 /* BusinessServices.swift in Sources */,
 				78FF56B427E846FA00D832C5 /* Encodable+Extensions.swift in Sources */,
 				78FF56AB27E8403B00D832C5 /* BusinessResponseModel.swift in Sources */,

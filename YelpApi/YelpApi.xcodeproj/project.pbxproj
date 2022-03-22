@@ -10,6 +10,7 @@
 		71E166D0C44D69B6947292C6 /* Pods_YelpApi_YelpApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4801326D9BB162C5C7E081E3 /* Pods_YelpApi_YelpApiUITests.framework */; };
 		785DF51D27E96B7000B58E21 /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DF51C27E96B7000B58E21 /* BusinessListViewController.swift */; };
 		785DF52027E99CA000B58E21 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DF51F27E99CA000B58E21 /* LoadMoreCell.swift */; };
+		785DF52227E9A05B00B58E21 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DF52127E9A05B00B58E21 /* FilterViewController.swift */; };
 		78FF566327E8299F00D832C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF566227E8299F00D832C5 /* AppDelegate.swift */; };
 		78FF566527E8299F00D832C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF566427E8299F00D832C5 /* SceneDelegate.swift */; };
 		78FF566727E8299F00D832C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FF566627E8299F00D832C5 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		670E04F89C82C2D8F98F8F10 /* YelpApiTests-YelpApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "YelpApiTests-YelpApiMocks.generated.swift"; path = "MockingbirdMocks/YelpApiTests-YelpApiMocks.generated.swift"; sourceTree = "<group>"; };
 		785DF51C27E96B7000B58E21 /* BusinessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewController.swift; sourceTree = "<group>"; };
 		785DF51F27E99CA000B58E21 /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
+		785DF52127E9A05B00B58E21 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		78FF565F27E8299E00D832C5 /* YelpApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FF566227E8299F00D832C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FF566427E8299F00D832C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				78FF56BA27E8752900D832C5 /* FilterViewModel.swift */,
+				785DF52127E9A05B00B58E21 /* FilterViewController.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				78FF56BB27E8752900D832C5 /* FilterViewModel.swift in Sources */,
 				78FF56A027E83E5F00D832C5 /* ApiError.swift in Sources */,
 				78FF56A127E83E5F00D832C5 /* APIRequest.swift in Sources */,
+				785DF52227E9A05B00B58E21 /* FilterViewController.swift in Sources */,
 				78FF56AD27E8404500D832C5 /* Business.swift in Sources */,
 				78FF56B127E845F800D832C5 /* BusinessURLRequests.swift in Sources */,
 				78FF569427E83DB800D832C5 /* Constants.swift in Sources */,

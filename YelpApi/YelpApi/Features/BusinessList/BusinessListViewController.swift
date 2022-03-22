@@ -46,6 +46,20 @@ class BusinessListViewController: UIViewController {
     viewModel.onRefresh()
   }
   
+  @IBAction func settingButtonDidTapped(_ sender: Any) {
+    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let filterVC = storyBoard.instantiateViewController(withIdentifier: "FilterViewController") as! FilterViewController
+    filterVC.applyNewFilter = { [weak self] filter in
+      self?.tableView.setContentOffset(.zero, animated: true)
+      self?.loadingView.startAnimating()
+      self?.viewModel.onFilterChanged(newSearchTerm: filter.searchTerm,
+                                      newCategory: filter.category,
+                                      newLocation: filter.location,
+                                      newSorting: filter.sorting)
+    }
+    present(filterVC, animated: true, completion: nil)
+  }
+  
   private func onStateChanged(_ newState: BusinessListViewModel.ViewStates) {
     switch newState {
     case .initial:

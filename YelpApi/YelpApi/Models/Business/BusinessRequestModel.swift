@@ -44,7 +44,7 @@ struct BusinessRequestModel: Codable, Equatable {
 }
 
 enum CategoryFilter: String, Codable {
-  case football, surfing, snorkeling, seniorcenters, all
+  case football, surfing, fencing, all
 }
 
 enum RequestSorting: String, Codable {

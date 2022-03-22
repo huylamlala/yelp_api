@@ -189,7 +189,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wk-Pq-Qlp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="197.53521126760563"/>
+            <point key="canvasLocation" x="1678" y="114"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="taL-cR-kW1">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="edv-0G-iYX" customClass="DetailViewController" customModule="YelpApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P8H-cG-uvr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="llz-ha-Idj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="llz-ha-Idj" secondAttribute="height" multiplier="16:9" id="W4t-eP-Flt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ekj-P7-rzZ">
+                                <rect key="frame" x="16" y="224.5" width="22" height="20"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <imageReference key="image" image="star.leadinghalf.fill" catalog="system" renderingMode="original"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xuM-eY-Zje">
+                                <rect key="frame" x="16" y="254" width="22" height="18"/>
+                                <imageReference key="image" image="book.fill" catalog="system" renderingMode="original"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faI-va-82w">
+                                <rect key="frame" x="40" y="254.5" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtr-yw-Z3C">
+                                <rect key="frame" x="40" y="226.5" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q67-YL-FBk">
+                                <rect key="frame" x="16" y="196" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L59-HP-CXz">
+                                <rect key="frame" x="16" y="281.5" width="20" height="19"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <imageReference key="image" image="dollarsign.circle.fill" catalog="system" renderingMode="original"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFc-JL-pjO">
+                                <rect key="frame" x="38" y="282.5" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xQC-J5-hJt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q67-YL-FBk" firstAttribute="top" secondItem="llz-ha-Idj" secondAttribute="bottom" constant="16" id="1dy-Ef-jU8"/>
+                            <constraint firstItem="hFc-JL-pjO" firstAttribute="leading" secondItem="L59-HP-CXz" secondAttribute="trailing" constant="2" id="3v4-Sh-hsV"/>
+                            <constraint firstItem="Mtr-yw-Z3C" firstAttribute="centerY" secondItem="Ekj-P7-rzZ" secondAttribute="centerY" id="4QP-0f-DdJ"/>
+                            <constraint firstItem="faI-va-82w" firstAttribute="leading" secondItem="xuM-eY-Zje" secondAttribute="trailing" constant="2" id="5K5-aF-1eL"/>
+                            <constraint firstItem="Ekj-P7-rzZ" firstAttribute="top" secondItem="q67-YL-FBk" secondAttribute="bottom" constant="8" symbolic="YES" id="5eV-gK-XS2"/>
+                            <constraint firstItem="q67-YL-FBk" firstAttribute="leading" secondItem="xQC-J5-hJt" secondAttribute="leading" constant="16" id="71z-At-xQg"/>
+                            <constraint firstItem="Ekj-P7-rzZ" firstAttribute="leading" secondItem="q67-YL-FBk" secondAttribute="leading" id="8kT-dj-sr4"/>
+                            <constraint firstItem="xuM-eY-Zje" firstAttribute="leading" secondItem="Ekj-P7-rzZ" secondAttribute="leading" id="Jgi-za-zQ6"/>
+                            <constraint firstItem="llz-ha-Idj" firstAttribute="leading" secondItem="xQC-J5-hJt" secondAttribute="leading" id="NPx-eq-4V7"/>
+                            <constraint firstItem="Mtr-yw-Z3C" firstAttribute="leading" secondItem="Ekj-P7-rzZ" secondAttribute="trailing" constant="2" id="Uji-yg-Gr7"/>
+                            <constraint firstItem="hFc-JL-pjO" firstAttribute="centerY" secondItem="L59-HP-CXz" secondAttribute="centerY" id="dVO-qU-TcX"/>
+                            <constraint firstItem="L59-HP-CXz" firstAttribute="leading" secondItem="xuM-eY-Zje" secondAttribute="leading" id="dwS-Je-kUc"/>
+                            <constraint firstItem="llz-ha-Idj" firstAttribute="top" secondItem="xQC-J5-hJt" secondAttribute="top" id="eWL-dj-q3F"/>
+                            <constraint firstItem="faI-va-82w" firstAttribute="centerY" secondItem="xuM-eY-Zje" secondAttribute="centerY" id="nY1-XM-bCP"/>
+                            <constraint firstItem="L59-HP-CXz" firstAttribute="top" secondItem="xuM-eY-Zje" secondAttribute="bottom" constant="8" id="o2X-SQ-c3K"/>
+                            <constraint firstItem="xuM-eY-Zje" firstAttribute="top" secondItem="Ekj-P7-rzZ" secondAttribute="bottom" constant="8" id="rLg-U6-qSl"/>
+                            <constraint firstItem="xQC-J5-hJt" firstAttribute="trailing" secondItem="llz-ha-Idj" secondAttribute="trailing" id="x3G-NQ-zLD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bizCategoriesLabel" destination="faI-va-82w" id="8HR-E5-9NR"/>
+                        <outlet property="bizImageView" destination="llz-ha-Idj" id="hzJ-IN-80V"/>
+                        <outlet property="bizName" destination="q67-YL-FBk" id="Lgw-qR-Spe"/>
+                        <outlet property="bizPriceLabel" destination="hFc-JL-pjO" id="MVZ-Tf-NqW"/>
+                        <outlet property="bizRatingsLabel" destination="Mtr-yw-Z3C" id="YzF-Y5-qkK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhs-wa-hNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2489" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dgw-S0-XOx">
@@ -211,7 +298,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="star.leadinghalf.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

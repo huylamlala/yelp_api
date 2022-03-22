@@ -116,6 +116,11 @@ extension BusinessListViewController: UITableViewDelegate, UITableViewDataSource
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+    if indexPath.row >= viewModel.businessList.count { return }
+    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+    vc.business = viewModel.businessList[indexPath.row]
+    navigationController?.pushViewController(vc, animated: true)
   }
   
   func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

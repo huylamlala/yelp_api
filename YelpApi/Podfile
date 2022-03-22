@@ -9,6 +9,8 @@ target 'YelpApi' do
 pod 'Alamofire', '~> 5.5'
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'Kingfisher', '~> 7.0'
+
   target 'YelpApiTests' do
     inherit! :search_paths
     # Pods for testing

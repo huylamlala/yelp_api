@@ -22,6 +22,10 @@ struct Business {
   let location: Location?
   let distance: Double?
   let transactions: [String]?
+  
+  var categoriesName: String? {
+    categories?.compactMap ({ $0.title }).joined(separator: ", ")
+  }
 }
 
 extension Business: Codable, Equatable {
